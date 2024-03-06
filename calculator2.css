@@ -1,0 +1,54 @@
+body{
+    background-image: url('math_back2.jpg');
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    max-width: 500px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.542);
+}
+#screen{
+    width: 100%;
+    margin: 0;
+    border: none;
+    color: rgb(62, 52, 52);
+    font-size: 60px;
+    padding: 10px;
+    background-color: grey;
+}
+#button-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+    padding: 30px;
+}
+button{
+    font-family: monospace;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(85, 79, 79);
+    color: white;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: orange;
+}
+#trigger:hover{
+    background-color: rgb(69, 179, 44);
+}
+button:active{
+    opacity: 0.6;
+}
